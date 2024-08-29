@@ -22,8 +22,7 @@ header {
 .boxes {
     width: 300px;
     margin: 20px auto;
-    padding: 20px;
-    background-color: white;
+    background-color: transparent;
 }
 
 .boxes label {
