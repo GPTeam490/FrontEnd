@@ -1,1 +1,53 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    background-color: blue;
+}
 
+header {
+    background-color: black;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.center {
+    display: block;
+    margin: 20px auto;
+    width: 50px;
+    height: auto;
+}
+
+.boxes {
+    width: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+}
+
+.boxes label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.boxes input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid;
+    border-radius: 4px;
+}
+
+.result-box {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 4px;
+    background-color: pink;
+    overflow-y: auto;
+    font-size: 14px;
+    color: black;
+}
