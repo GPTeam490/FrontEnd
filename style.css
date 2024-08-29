@@ -14,8 +14,8 @@ header {
 
 .center {
     display: block;
-    margin: 50px auto;
-    width: 100px;
+    margin: 100px auto;
+    width: 200px;
     height: auto;
 }
 
@@ -35,7 +35,6 @@ header {
     width: 100%;
     padding: 8px;
     margin-bottom: 15px;
-    border-radius: 4px;
 }
 
 .result-box {
