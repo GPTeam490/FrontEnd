@@ -19,7 +19,7 @@ header {
   height: auto;
 }
 
-/* .boxes {
+.boxes {
   width: 300px;
   margin: 20px auto;
   background-color: transparent;
@@ -45,7 +45,7 @@ header {
   overflow-y: auto;
   font-size: 14px;
   color: black;
-} */
+}
 
 /* Set initial state for the logo */
 .logoVac {
