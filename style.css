@@ -1,5 +1,6 @@
 body {
-  font-family: Arial;
+  font-family: "MyFont", Sans-Serif;
+  letter-spacing: -1px;
   margin: 0;
   padding: 0;
   background-color: white;
@@ -54,7 +55,7 @@ header {
 /* custom fonts */
 @font-face {
   font-family: "MyFont";
-  src: url("https://cdn.glitch.global/294282c5-9e0f-4966-975b-532832b447ad/round8-four.otf?v=1725037134785")
+  src: url("https://cdn.glitch.global/294282c5-9e0f-4966-975b-532832b447ad/AlteHaasGroteskBold.ttf?v=1725048974005")
     format("opentype");
 
   font-style: normal;
@@ -63,7 +64,7 @@ header {
 .palosans {
   font-family: "MyFont", sans-serif;
     font-weight: -500;
-    letter-spacing: 5px;
+    letter-spacing: 0px;
 }
 
 /* Set initial state for the logo */
@@ -132,3 +133,89 @@ header {
     opacity: 1;
   }
 }
+
+/* moving background element logic */
+.box-area {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -2;
+  color: light-bg;
+}
+
+.box-area li {
+  position: absolute;
+  display: inline-block;
+  list-style: none;
+  width: 90px;
+  height: 90px;
+  animation: animate 20s linear infinite;
+  bottom: -150px;
+  z-index: -2;
+}
+
+.box-area li:nth-child(1) {
+  left: 86%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 0s;
+}
+
+.box-area li:nth-child(2) {
+  left: 12%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 1.5s;
+  animation-duration: 10s;
+}
+
+.box-area li:nth-child(3) {
+  left: 70%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 5.5s;
+}
+
+.box-area li:nth-child(4) {
+  left: 42%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 0s;
+  animation-duration: 15s;
+}
+.box-area li:nth-child(5) {
+  left: 65%;
+  width: 40;
+  height: 40;
+  animation-delay: 0s;
+}
+
+.box-area li:nth-child(6) {
+  left: 30%;
+  width: 70;
+  height: 70;
+  animation-delay: 2s;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(-800px);
+    opacity: 0;
+  }
+}
+
+.popout {
+  transition: transform 0.3s ease
+}
+
+.popout:hover {
+  transform: scale(1.1);
+}
+
